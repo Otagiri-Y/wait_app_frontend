@@ -1,3 +1,4 @@
+import styles from '../styles/Free-Queue.module.css';
 const FreeQueue = () => (
     <div>
         <h1 className="text-xl font-bold mb-4">Free Queue</h1>

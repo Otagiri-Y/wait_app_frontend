@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import QueueTable from '../components/QueueTable';
+import styles from '../styles/Queue-Info.module.css';
 
 const QueueInfo = () => {
     const [queueData, setQueueData] = useState([]);

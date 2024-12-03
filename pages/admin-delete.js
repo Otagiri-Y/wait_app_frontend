@@ -1,3 +1,5 @@
+import styles from '../styles/Admin-Delete.module.css';
+
 const AdminDelete = () => {
     const handleDelete = async () => {
         await fetch('/api/admin', { method: 'DELETE' });
