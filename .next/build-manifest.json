@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/YcrEyTsPmMcolcsXUZAmB/_buildManifest.js",
-    "static/YcrEyTsPmMcolcsXUZAmB/_ssgManifest.js"
+    "static/LsXCr3wdGKHIFMzjPrLk3/_buildManifest.js",
+    "static/LsXCr3wdGKHIFMzjPrLk3/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -54,8 +54,10 @@
       "static/chunks/webpack-8fa1640cc84ba8fe.js",
       "static/chunks/framework-ecc4130bc7a58a64.js",
       "static/chunks/main-b203a0fef99bcbd5.js",
-      "static/css/635162f83985eb4a.css",
-      "static/chunks/pages/paid-queue-d8b9485ec81bdcf2.js"
+      "static/chunks/c16184b3-aafb7db44cf60d41.js",
+      "static/chunks/834-d68238ed4580eb35.js",
+      "static/css/26dc681bef8859c1.css",
+      "static/chunks/pages/paid-queue-c30dbb0c33714560.js"
     ],
     "/queue": [
       "static/chunks/webpack-8fa1640cc84ba8fe.js",
