@@ -3,53 +3,74 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f9f9f9;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center; /* フォーム全体を中央にする */
+  text-align: center;
 }
 
-.title {
-  font-size: 2.5rem; /* h1 のサイズを大きく */
-  margin-bottom: 20px;
+.titleMain {
+  padding-top:100px;
+  font-size: 44px;
+  margin-bottom: 20px; /* h1 の下にスペースを追加 */
   color: #333;
+  text-align: center;
 }
 
-.title h2 {
-  font-size: 1rem; /* h2 のサイズを小さく */
-  margin-bottom: 30px;
-  color: #333;
+.titleSub {
+  font-size: 24px;
+  margin-top: 20px; /* h2 の上にスペースを追加（必要なら） */
+  color: #555;
+  text-align: center;
 }
 
 .ticketInfo {
+  padding-top: 50px;
   text-align: center;
-  color: #ff0000; /* 赤字にする */
+  color: #000000;
   margin-bottom: 30px;
 }
 
+.ticketCost {
+  color: #ff0000;
+}
+
+.additionalText {
+  padding-left: 50px;
+  text-align: left;
+  color: #000000;
+}
+
+
 .labelWrapper {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
+  flex-direction: column; /* 縦方向に並べる */
+  align-items: flex-start; /* 子要素を左揃え */
+  margin-bottom: 16px;
+  width: auto; /* 必要に応じて幅を調整 */
 }
 
 .labelWrapper label {
   font-size: 1.2rem;
   margin-bottom: 5px;
   color: #555;
-  text-align: left; /* ラベルも中央寄せ */
 }
 
 .input {
-  padding: 10px;
-  border: 1px solid #ddd;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 4px;
+  padding: 8px;
+  border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 1rem;
-  width: 80%; /* スマホでは全体幅に合わせる */
-  box-sizing: border-box;
-  transition: border-color 0.3s ease;
-  margin: 10px auto; /* スマホでは中央寄せ */
-  display: block; /* 縦に並べる */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 要素全体を中央に寄せる */
+  width: 100%; /* 必要に応じて変更可能 */
+  padding: 0 20px;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .input:focus {
@@ -58,18 +79,19 @@
 }
 
 .submitButton {
-  background-color: #c300ff;
-  color: #fff;
+  background-color: #ECE6F0;
+  color: #000000;
   padding: 10px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 12px;
   font-size: 1.2rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease;
-  margin: 0 auto; /* スマホでは中央寄せ */
+  margin: 10px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 影を追加 */
 }
 
 .submitButton:disabled {
@@ -88,42 +110,47 @@
   margin-top: 20px;
 }
 
-/* スマホ画面に対応するメディアクエリ */
+/* メディアクエリ: スマホ向け */
 @media (max-width: 600px) {
   .container {
-    width: 90%; /* スマホでは少し狭くする */
-    padding: 10px; /* 縮めたpadding */
+    padding: 10px;
+    max-width: 90%;
   }
 
-  .title {
-    font-size: 1.8rem; /* スマホでは少し小さく */
+  .titleMain {
+    margin-bottom: 15px; /* スマホ用に間隔を縮める */
+    font-size: 32px;
   }
 
-  .title h2 {
-    font-size: 0.8rem; /* スマホではさらに小さく */
+  .titleSub {
+    margin-top: 15px;
   }
-
   .ticketInfo {
-    margin-bottom: 15px; /* 縮めたmargin */
+    margin-bottom: 20px;
   }
 
   .labelWrapper label {
-    font-size: 1rem; /* スマホでは小さく */
-    text-align: left; /* ラベルも中央寄せ */
+    font-size: 1rem;
+    width: 10%;
   }
 
   .input {
-    width: 80%; /* 全体幅に合わせる */
-    margin: 10px auto; /* スマホでは中央寄せ */
-    display: block; /* 縦に並べる */
+    max-width: 100%;
+    margin: 8px auto;
+  }
+
+  .form {
+    padding: 10px;
+    max-width: 100%;
   }
 
   .submitButton {
-    font-size: 1rem; /* スマホでは小さく */
-    padding: 8px 16px; /* 縮めたpadding */
+    font-size: 1rem;
+    padding: 8px 16px;
+    width: 80%;
   }
 
   .error {
-    font-size: 0.9rem; /* スマホではさらに小さく */
+    font-size: 0.9rem;
   }
 }

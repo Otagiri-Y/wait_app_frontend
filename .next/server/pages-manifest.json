@@ -1,1 +1,7 @@
-{"/_app":"pages/_app.js","/api/admin":"pages/api/admin.js","/_error":"pages/_error.js","/admin-delete":"pages/admin-delete.html","/api/email":"pages/api/email.js","/completed":"pages/completed.html","/api/queue":"pages/api/queue.js","/free-queue":"pages/free-queue.html","/":"pages/index.html","/paid-queue":"pages/paid-queue.html","/queue-info":"pages/queue-info.html","/queue":"pages/queue.html","/_document":"pages/_document.js","/404":"pages/404.html"}
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/completed": "pages/completed.js",
+  "/paid-queue": "pages/paid-queue.js"
+}
