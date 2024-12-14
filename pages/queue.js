@@ -21,7 +21,7 @@ export default function PaidQueuePage() {
 
         setTimeout(() => {
             setLoading(false);
-            router.push('/queue-info');
+            router.push('/paid-queue');
         }, 2000);
     };
 
