@@ -21,11 +21,14 @@ export default function PaidQueuePage() {
         setTimeout(() => {
             setLoading(false);
             router.push('/queue');
-        }, 2000);
+        }, 500);
     };
 
     return (
         <div className={styles.container}>
+            <div className={styles.imageContainer}>
+                <img src="../samurai.png" alt="Samurai Image" className={styles.image} />
+            </div>
             <h1 className={styles.titleMain}>Smash the LINE!</h1>
             <h2 className={styles.titleSub}>待ち時間をすっ飛ばせ!</h2>
 

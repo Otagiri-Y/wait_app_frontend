@@ -22,15 +22,20 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/paid-queue": [
+    "/completed": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/paid-queue.js"
+      "static/chunks/pages/completed.js"
     ],
     "/queue": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/queue.js"
+    ],
+    "/queue-info": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/queue-info.js"
     ]
   },
   "ampFirstPages": []

@@ -8,18 +8,26 @@
 }
 
 .titleMain {
-  padding-top:100px;
+  padding-top:20px;
   font-size: 44px;
   margin-bottom: 20px; /* h1 の下にスペースを追加 */
   color: #333;
-  text-align: center;
 }
 
 .titleSub {
   font-size: 24px;
   margin-top: 20px; /* h2 の上にスペースを追加（必要なら） */
   color: #555;
+
+}
+
+.imageContainer {
   text-align: center;
+}
+
+.image {
+  max-width: 10%;
+  height: auto;
 }
 
 .ticketInfo {
@@ -39,8 +47,15 @@
   display: flex; /* 横並びにする */
   align-items: center; /* 縦方向の中央揃え */
   gap: 8px; /* 子要素間の間隔 */
-  width: 60%;
-  padding-left: 80px;
+  width: 80%;
+  padding-left: 60px;
+  padding-bottom: 10px;
+}
+
+.additionalText {
+  padding-left: 50px;
+  text-align: left;
+  color: #000000;
 }
 
 .ticketFree {
@@ -48,14 +63,20 @@
 }
 
 .circle {
-  width: 16px;
-  height: 16px;
-  background-color: purple;
+  width: 28px;
+  height: 28px;
+  background-color: rgb(225, 166, 225);
   border-radius: 50%; /* 円形 */
+  font-size: 16px;
+  display: flex; /* フレックスボックスを有効化 */
+  justify-content: center; /* 水平方向に中央寄せ */
+  align-items: center; /* 垂直方向に中央寄せ */
+  text-align: center; /* 文字の整列 */
 }
 
+
 .label {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .radio {
@@ -91,6 +112,7 @@
   justify-content: center;
   transition: background-color 0.3s ease;
   margin: 10px auto;
+
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 影を追加 */
 }
 

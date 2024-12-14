@@ -83,6 +83,9 @@ export default function PaidQueuePage() {
 
   return (
     <div className={styles.container}>
+      <div className={styles.imageContainer}>
+          <img src="../samurai.png" alt="Samurai Image" className={styles.image} />
+      </div>
       <h1 className={styles.titleMain}>
         Smash the WAIT!
       </h1>

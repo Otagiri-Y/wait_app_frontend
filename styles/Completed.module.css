@@ -8,10 +8,19 @@
 }
 
 .titleMain {
-  padding-top: 100px;
+  padding-top: 20px;
   font-size: 44px;
   margin-bottom: 20px; /* h1 の下にスペースを追加 */
   color: #333;
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+.image {
+  max-width: 10%;
+  height: auto;
 }
 
 .titleSub {
