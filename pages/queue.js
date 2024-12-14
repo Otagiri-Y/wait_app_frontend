@@ -93,11 +93,7 @@ export default function PaidQueuePage() {
         setTimeout(() => {
             setLoading(false);
             router.push('/queue-info');
-<<<<<<< HEAD
         }, 500);
-=======
-        }, 2000);
->>>>>>> origin/main
     };
 
     return (
