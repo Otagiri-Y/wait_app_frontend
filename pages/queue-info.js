@@ -25,7 +25,7 @@ export default function PaidQueuePage() {
                 <img src="../samurai.png" alt="Samurai Image" className={styles.image} />
             </div>
             <h1 className={styles.titleMain}>Smash the LINE!</h1>
-            <h2 className={styles.titleSub}>待ち時間をすっ飛ばせ!</h2>
+            <h2 className={styles.titleSub}>行列をすっ飛ばせ!</h2>
 
             <div className={styles.ticketInfo}>
                 <h2>[特急券]</h2>
@@ -57,12 +57,12 @@ export default function PaidQueuePage() {
                     </div>
                     <div className={styles.ticketOption}>
                         <div className={styles.circle}>特</div>
-                        <div className={styles.label}>7番目　500円/人</div>
+                        <div className={styles.label}>7番目　600円/人</div>
                         <input type="radio" name="ticketType" className={styles.radio} />
                     </div>
                     <div className={styles.ticketOption}>
                         <div className={styles.circle}>特</div>
-                        <div className={styles.label}>10番目　500円/人</div>
+                        <div className={styles.label}>10番目　800円/人</div>
                         <input type="radio" name="ticketType" className={styles.radio} />
                     </div>
                 </div>

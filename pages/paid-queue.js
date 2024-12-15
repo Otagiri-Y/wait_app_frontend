@@ -87,10 +87,10 @@ export default function PaidQueuePage() {
           <img src="../samurai.png" alt="Samurai Image" className={styles.image} />
       </div>
       <h1 className={styles.titleMain}>
-        Smash the WAIT!
+        Smash the LINE!
       </h1>
       <h2 className={styles.titleSub}>
-        待ち時間をすっ飛ばせ!
+        行列をすっ飛ばせ!
       </h2>
       <div className={styles.ticketInfo}>
         <h2>[特急券]</h2>

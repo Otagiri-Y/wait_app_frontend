@@ -2,7 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/completed": "pages/completed.js",
+  "/queue-info": "pages/queue-info.js",
+  "/paid-queue": "pages/paid-queue.js",
   "/queue": "pages/queue.js",
-  "/queue-info": "pages/queue-info.js"
+  "/completed": "pages/completed.js"
 }

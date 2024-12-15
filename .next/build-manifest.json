@@ -27,6 +27,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/completed.js"
     ],
+    "/paid-queue": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/paid-queue.js"
+    ],
     "/queue": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

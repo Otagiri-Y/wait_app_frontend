@@ -22,9 +22,10 @@ export default function PaidQueuePage() {
     const translations = {
         en: {
             titleMain: "Smash the LINE!",
-            titleSub: "Skip the waiting time!",
+            titleSub: "Skip the procession!",
             ticketInfo: "[Limited express ticket]",
-            additionalText: "ramen men-ya murasaki-samurai",
+            additionalTextA: "ramen",
+            additionalText: "men-ya murasaki-samurai",
             ticketCost: "about 30 groups | (about 90 min)",
             queueTitleLabel: "No name groups",
             queueTitleTime: "min",
@@ -41,10 +42,11 @@ export default function PaidQueuePage() {
             }
         },
         zh: {
-            titleMain: "Smash the WAIT!",
-            titleSub: "排队时间被赶上!",
+            titleMain: "Smash the LINE!",
+            titleSub: "隊被赶上!",
             ticketInfo: "[特急券]",
-            additionalText: "拉面 麺屋 紫侍",
+            additionalTextA: "拉面",
+            additionalText: "麺屋 紫侍",
             ticketCost: "30组排队 | （约90分钟）",
             queueTitleLabel: "No 名称 人数",
             queueTitleTime: "分钟",
@@ -62,9 +64,10 @@ export default function PaidQueuePage() {
         },
         ja: {
             titleMain: "Smash the LINE!",
-            titleSub: "待ち時間をすっ飛ばせ!",
+            titleSub: "行列をすっ飛ばせ!",
             ticketInfo: "[特急券]",
-            additionalText: "ラーメン 麺屋 紫侍",
+            additionalTextA: "らーめん",
+            additionalText: "麺屋 紫侍",
             ticketCost: "30組待ち | 約90分",
             queueTitleLabel: "No 名前 人数",
             queueTitleTime: "分",
@@ -83,8 +86,15 @@ export default function PaidQueuePage() {
     };
 
     const getTranslation = (key) => {
-        return translations[language][key];
+        const keys = key.split('.'); // ドット区切りでキーを分割
+        let value = translations[language];
+        for (const k of keys) {
+            value = value[k];
+            if (!value) break;
+        }
+        return value || key; // 存在しない場合はデフォルトでキーを返す
     };
+    
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -109,7 +119,8 @@ export default function PaidQueuePage() {
             </div>
 
             <div className={styles.additionalText}>
-                <span>{getTranslation('additionalText')}</span>
+                <a>{getTranslation('additionalTextA')}</a>
+                <h2>{getTranslation('additionalText')}</h2>
             </div>
 
             <div className={styles.ticketCost}>
@@ -130,15 +141,16 @@ export default function PaidQueuePage() {
 
             <form onSubmit={handleSubmit} className={styles.form}>
                 <button type="submit" className={styles.submitButton} disabled={loading}>
-                    {loading ? (
-                        <>
-                            <FontAwesomeIcon icon={faSpinner} spin />&nbsp;{getTranslation('buttonLabels.submitting')}
-                        </>
-                    ) : (
-                        <>
-                            <FontAwesomeIcon icon={faPaperPlane} />&nbsp;{getTranslation('buttonLabels.submit')}
-                        </>
-                    )}
+                {loading ? (
+                    <>
+                        <FontAwesomeIcon icon={faSpinner} spin />&nbsp;{getTranslation('buttonLabels.submitting')}
+                    </>
+                ) : (
+                    <>
+                        <FontAwesomeIcon icon={faPaperPlane} />&nbsp;{getTranslation('buttonLabels.submit')}
+                    </>
+                )}
+
                 </button>
             </form>
         </div>
